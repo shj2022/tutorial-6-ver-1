@@ -2,7 +2,7 @@
 > Open this page at [https://shj2022.github.io/tutorial-6-ver-1/](https://shj2022.github.io/tutorial-6-ver-1/)
 
 ## Tutorials
-* [tutorial](tutorial)
+* [tutorial](/tutorial)
 
 ## Use as Extension
 

@@ -2,10 +2,6 @@
 # Project moveSMART Pedometer Tutorial- Level 7 Ver 1
 # Learning about calibration, experimenting, comparisons
 
-```blocks
-loops.everyInterval(500,function () {if (input.acceleration(Dimension.Strength) < 1500) {}})
-```
-
 ## Step 1
 
 In this tutorial, we will improve the accuracy of the physical activity monitor. On your screen is the step counter you built before, using the on ``||Input:on shake||`` block. We will replace that portion of the code in this tutorial.
@@ -35,6 +31,10 @@ We want the ``||variables: step||`` count to increase by 1 every time you take a
 Use ``||logic: > ||`` to code a block that returns ``||logic: true||`` when ``||Input:acceleration (mg) strength||`` is bigger than 1500.
 
 Hint: Here we have chosen the value 1500 for you as a starting point. You will have a chance to change it later!
+```blocks
+loops.everyInterval(500,function () {if (0 < 0) {}})
+input.acceleration(Dimension.Strength)
+```
 
 ## Step 4
 Now using the ``||logic: if true then||`` so that the microbit can recognize when the acceleration strength is over 1500.
