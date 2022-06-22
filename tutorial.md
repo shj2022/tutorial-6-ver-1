@@ -3,8 +3,7 @@
 # Learning about calibration, experimenting, comparisons
 
 ```blocks
-loops.everyInterval(500,function () {if (0 < 0) {}})
-input.acceleration(Dimension.Strength)
+loops.everyInterval(500,function () {if (input.acceleration(Dimension.Strength) < 1500) {}})
 ```
 
 ## Step 1
@@ -41,7 +40,7 @@ Hint: Here we have chosen the value 1500 for you as a starting point. You will h
 Now using the ``||logic: if true then||`` so that the microbit can recognize when the acceleration strength is over 1500.
 
 ## Step 5
-Now use the block ``||loops: everyInterval(100, function())||`` to make the microbit check the acceleration strength every 100 miliseconds.
+Now use the block ``||loops: everyInterval(500, function())||`` to make the microbit check the acceleration strength every 100 miliseconds.
 
 ## Step 6
 Now use a variable block so that ``||variables: step||`` would increase by 1 every time the threshold is passed.
