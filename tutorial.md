@@ -32,8 +32,7 @@ Use ``||logic: > ||`` to code a block that returns ``||logic: true||`` when ``||
 
 Hint: Here we have chosen the value 1500 for you as a starting point. You will have a chance to change it later!
 ```blocks
-loops.everyInterval(500,function () {if (0 < 0) {}})
-input.acceleration(Dimension.Strength)
+loops.everyInterval(500,function () {if (input.acceleration(Dimension.X) < 0) {}})
 ```
 
 ## Step 4
