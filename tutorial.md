@@ -28,15 +28,15 @@ basic.forever(function () {
 We want the ``||variables: step||`` count to increase by 1 every time you take a step. To accurately do that, we will use the ``||Input:acceleration (mg) strength||`` value.
 
 ## Step 3
-Use ``||logic: > ||`` to code a block that returns ``||logic: true||`` when ``||Input:acceleration (mg) strength||`` is bigger than 1500.
+Use ``||logic: > ||`` to code a block that returns ``||logic: true||`` when ``||Input:acceleration (mg) strength||`` is bigger than 1.5g.
 
-Hint: Here we have chosen the value 1500 for you as a starting point. You will have a chance to change it later!
+Hint: Here we have chosen the value 1.5 for you as a starting point. You will have a chance to change it later!
 ```blocks
 loops.everyInterval(500,function () {if (input.acceleration(Dimension.X) < 0) {}})
 ```
 
 ## Step 4
-Now use the block ``||logic: if true then||`` so that the microbit can recognize when the acceleration strength is over 1500.
+Now use the block ``||logic: if true then||`` so that the microbit can recognize when the acceleration strength is over 1.5g.
 
 ## Step 5
 Now use the block ``||loops: every 100ms||`` to make the microbit check the acceleration strength every 100 miliseconds.
